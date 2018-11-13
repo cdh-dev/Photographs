@@ -1,0 +1,138 @@
+/*########################################################################
+Post: Styling for the individual post.
+########################################################################*/
+
+.component-post {
+    display: inline;
+}
+
+.component-post .post-header span {
+    font-weight: 500;
+    color: #6D7586;
+}
+
+.component-post .post-image-frame {
+    height: 0px;
+    max-height: 0px;
+
+    background-size: cover;
+}
+
+.component-post .post-extras-meta {
+    font-weight: 400;
+}
+
+.component-post .post-extras-meta-likes {
+    color: #FF735D;
+}
+
+.component-post .post-extras-meta-date {
+    color: #434955;
+}
+
+.component-post .post-extras-meta-views {
+    color: #6d7586;
+}
+
+.component-post .post-header-heart {
+    padding: 2px;
+
+    -webkit-transition: color, fill, -webkit-transform ease-in-out;
+    transition: color, fill, -webkit-transform ease-in-out;
+    transition: color, fill, transform ease-in-out;
+    transition: color, fill, transform ease-in-out, -webkit-transform ease-in-out;
+
+    -webkit-transition-duration: 0.1s;    
+    transition-duration: 0.1s;
+}
+
+.component-post .post-header-heart:hover {
+    cursor: pointer;
+
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.component-post .post-header-heart.unselected {
+    color: #545D6F;
+}
+
+.component-post .post-header-heart.unselected:hover {
+    color: #ff735d;
+}
+
+.component-post .post-header-heart.selected {
+    color: #ff735d;
+    fill: #ff735d;
+}
+
+/*------------------------------------------------------------------------
+Desktop Displays
+-------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 601px) {
+
+    .component-post .post-header {
+        margin-bottom: 5px;
+    }
+
+    .component-post .post-extras {
+        margin-top: 5px;
+    }
+
+    .component-post .post-header span {
+        font-size: 24px;
+    }
+
+    .component-post .post-header-item {
+        margin-right: 10px;
+    }
+
+    .component-post .post-extras-meta {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .component-post .post-header-heart {
+        height: 40px;
+    }
+
+}
+
+
+/*------------------------------------------------------------------------
+Mobile Displays
+-------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+
+    .component-post .post-header span {
+        font-size: 18px;
+    }
+
+    .component-post .post-header {
+        margin-left: 3px;
+        margin-bottom: 3px;
+    }
+
+    .component-post .post-extras {
+        margin-top: 3px;
+    }
+
+    .component-post .post-extras-meta {
+        margin-left: 2px;
+        margin-right: 5px;
+
+        font-size: 14px;
+    }
+
+    .component-post .post-header-item {
+        margin-right: 6px;
+    }
+
+    .component-post .post-header-heart {
+        height: 20px;
+    }
+
+}
+

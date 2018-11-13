@@ -1,0 +1,119 @@
+/*########################################################################
+Entry: Styling for the individual entry page.
+########################################################################*/
+
+#container .component-individual-entry .entry-detail-header span {
+    font-weight: 500;
+    color: #6D7586;
+}
+
+#container .component-individual-entry .entry-extra-label {
+    font-weight: 400;
+}
+
+#container .component-individual-entry .entry-meta-likes-label {
+    color: #FF735D;
+}
+
+#container .component-individual-entry .entry-meta-date-label {
+    color: #434955;
+}
+
+#container .component-individual-entry .entry-meta-views-label {
+    color: #6d7586;
+}
+
+#container .component-individual-entry .entry-header-heart {
+    padding: 2px;
+
+    -webkit-transition: color, fill, -webkit-transform ease-in-out;
+    transition: color, fill, -webkit-transform ease-in-out;
+    transition: color, fill, transform ease-in-out;
+    transition: color, fill, transform ease-in-out, -webkit-transform ease-in-out;
+    
+    -webkit-transition-duration: 0.1s;    
+    transition-duration: 0.1s;
+}
+
+#container .component-individual-entry .entry-header-heart:hover {
+    cursor: pointer;
+
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#container .component-individual-entry .entry-header-heart.unselected {
+    color: #545D6F;
+}
+
+#container .component-individual-entry .entry-header-heart.unselected:hover {
+    color: #ff735d;
+}
+
+#container .component-individual-entry .entry-header-heart.selected {
+    color: #ff735d;
+    fill: #ff735d;
+}
+
+/*------------------------------------------------------------------------
+Desktop Displays
+-------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 601px) {
+
+    #container .component-individual-entry {
+        height: 100vh;
+        width: 100%;
+    }
+
+    #container .component-individual-entry .entry-detail-header {
+        position: absolute;
+        bottom: 100%;
+
+        margin-bottom: 15px;
+    }
+
+    #container .component-individual-entry .entry-detail-header span {
+        font-size: 24px;
+    }
+
+    #container .component-individual-entry .entry-header-item {
+        margin-right: 15px;
+    }
+
+    #container .component-individual-entry .entry-detail-image img {
+        height: auto;
+        width: auto;
+
+        max-width: 90vw;    
+        max-height: 70vh;
+    }
+
+    #container .component-individual-entry .entry-detail-extras {
+        position: absolute;
+        top: 100%;
+
+        margin-top: 15px;
+    }
+
+    #container .component-individual-entry .entry-meta-extra {
+        margin-right: 10px;
+    }
+
+    #container .component-individual-entry .entry-extra-label {
+        font-size: 14px;
+    }
+
+}
+
+
+/*------------------------------------------------------------------------
+Mobile Displays
+-------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+
+
+
+}
+

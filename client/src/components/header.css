@@ -1,0 +1,102 @@
+/*########################################################################
+NAVIGATION: Styling for the navigation bar.
+########################################################################*/
+
+#component-header {
+    width: 100%;
+
+    z-index: 2;
+}
+
+#component-header .header-combine {
+    background-color: #2B2E34;
+    width: 100%;
+}
+
+#component-header #header-powered {
+    overflow: hidden;
+
+    position: fixed;
+    z-index: 2;
+
+    opacity: .98;
+
+    -webkit-transition: height ease, opacity;
+    transition: height ease, opacity;
+
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+#component-header #header-dummy {
+    position: relative;
+}
+
+#component-header.collapsed #header-powered {
+    height: 0;
+    opacity: 0;
+}
+
+#component-header .header-branding {
+    position: relative;
+    margin: auto;
+}
+
+#component-header #header-branding-name {
+    color: white;
+}
+
+#component-header #header-branding-title {
+    color: #ff735d;
+}
+
+/*------------------------------------------------------------------------
+Desktop Displays
+-------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 601px) {
+
+    #component-header .header-combine {
+        height: 47px;
+    }
+
+    #component-header #header-powered {
+        border-bottom: 1px solid #212328;
+    }
+
+    #component-header #header-branding-name {
+        font-size: 22px;
+        margin-right: 5px;
+    }
+
+    #component-header #header-branding-title {
+        font-size: 24px;
+    }
+
+}
+
+/*------------------------------------------------------------------------
+Mobile Displays
+-------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+
+    #component-header .header-combine {
+        height: 40px;
+    }
+
+    #component-header #header-powered {
+        border-bottom: 0.5px solid #212328;
+    }
+
+    #component-header #header-branding-name {
+        font-size: 18px;
+        margin-right: 3px;
+    }
+
+    #component-header #header-branding-title {
+        font-size: 20px;
+    }
+
+}
+

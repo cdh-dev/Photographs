@@ -1,0 +1,22 @@
+{
+	"name": "photographs",
+	"version": "1.0.0",
+	"main": "index.js",
+	"dependencies": {
+		"express": "latest",
+		"mongoose": "latest",
+        "express-sslify": "latest",
+        "cors": "latest",
+        "shortid": "latest",
+        "uuid": "latest",
+        "bcrypt": "latest",
+        "jsonwebtoken": "latest"
+	},
+	"scripts": {
+		"start": "node index.js",
+        "heroku-postbuild": "cd client && npm install && npm run build"
+	},
+	"engines": {
+		"node": "latest"
+	}
+}

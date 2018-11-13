@@ -1,0 +1,75 @@
+/*########################################################################
+THEME: Styling for the entire website, pervasive throughout.
+Should contain the vast majority of styling boilerplate.
+########################################################################*/
+
+@import url('https://fonts.googleapis.com/css?family=Assistant:300,400,800');
+@import url("https://use.typekit.net/efx4uqr.css");
+
+/*------------Fonts--------------*/
+
+.font-script {
+    font-family: questa-grande, serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5, .font-header {
+    font-family: sharik-sans, sans-serif;
+    font-weight: 500;
+}
+
+span, p, .font-body {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+}
+
+/*------------Body--------------*/
+
+body {
+    margin: 0;
+
+    background-color: #2B2E34;
+}
+
+span {
+}
+
+.flex-wrapper {
+    height: 100%;
+    width: 100%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.center-wrapper {
+    position: relative;
+    margin: auto;
+}
+
+/*------------------------------------------------------------------------
+Desktop Displays
+-------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 601px) {
+
+
+
+}
+
+
+/*------------------------------------------------------------------------
+Mobile Displays
+-------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+
+
+
+}
