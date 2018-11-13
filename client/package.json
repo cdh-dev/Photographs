@@ -16,7 +16,7 @@
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject"
     },
-    "proxy": "https://dylanhanson-dev.herokuapp.com",
+    "proxy": "https://photos.dylanhanson.com",
     "browserslist": [
         ">0.2%",
         "not dead",
